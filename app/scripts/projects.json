@@ -1,15 +1,21 @@
 {
   "elements": [{
     "id": 1,
-    "title": "Foo project",
+    "title": "Dyskit",
     "duration": "4 months",
     "position": "Developer",
-    "slug": "foo"
+    "slug": "dyskit"
    }, {
      "id": 2,
-     "title": "Bar project",
+     "title": "FolioArthur",
      "duration": "6 months",
      "position": "Developer",
-     "slug": "bar"
+     "slug": "folioArthur"
+   }, {
+     "id": 3,
+     "title": "Assu2000",
+     "duration": "6 months",
+     "position": "Developer",
+     "slug": "assu2000"
    }]
 }
