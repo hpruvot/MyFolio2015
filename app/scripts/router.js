@@ -13,10 +13,6 @@ define([
       routes: {
         "": "home",
         "home": "home",
-        "about": "about",
-        "skills": "skills",
-        "experience": "experience",
-        "contact": "contact",
         "projects": "projects",
         "project/:name": "project",
         "*actions": "defaultRoute"
@@ -25,10 +21,6 @@ define([
         this.route(/^project\/(\w+)/, 'project');
       },
       home: Controller.home,
-      about: Controller.about,
-      contact: Controller.contact,
-      skills: Controller.skills,
-      experience: Controller.experience,
       projects: Controller.projects,
       project: Controller.project,
       defaultRoute: Controller.unknown
