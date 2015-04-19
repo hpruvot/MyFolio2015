@@ -8,8 +8,22 @@ define([
 
   AppRouter.init = function() {
 
+    var history = [];
+
     /* Handle each request allowed in the app */
     var Router = Backbone.Router.extend({
+      execute: function(callback, args) {
+        /* We check whether it's a direct link to a single project */
+        if (args[0] !== null && history.length === 0) {
+          Controller.home({ directLink: true });
+        }
+
+        /* We keep trace of the history */
+        history.push(args[0]);
+
+        /* We apply the regular route's controler */
+        callback.apply(this, args);
+      },
       routes: {
         "": "home",
         "home": "home",
