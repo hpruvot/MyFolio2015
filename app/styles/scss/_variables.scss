@@ -1,0 +1,42 @@
+// ELEMENTS DOM
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	border: 20px solid #fff;
+	box-sizing: border-box;
+}
+
+.container, .content {
+	height: 100%;
+}
+
+// FONTS
+
+	//Gotham
+	$gothamMedium: "Gotham-Medium";
+	$gothamLight: "Gotham-Light";
+
+	@include font-face-gotham("Gotham Medium", $gothamMedium);
+	@include font-face-gotham("Gotham Light", $gothamLight);
+
+	//Playfair
+	$playfairBlack: "PlayfairDisplay-Black-webfont";
+	$playfairBold: "PlayfairDisplay-Bold-webfont";
+	$playfairRegular: "PlayfairDisplay-Regular-webfont";
+
+	@include font-face-playfair("Playfair Black", $playfairBlack);
+	@include font-face-playfair("Playfair Bold", $playfairBold);
+	@include font-face-playfair("Playfair Regular", $playfairRegular);
+
+
+// IMAGES
+$images: '../img';
+
+@media (max-width: 640px) {
+	body {
+		border: 15px solid #fff;
+		font-size: 50%;
+	}
+}

@@ -1,0 +1,52 @@
+// FONTS
+
+$folderGotham: "../fonts/Gotham";
+$folderPlayfair: "../fonts/Playfair";
+
+@mixin font-face-gotham($family, $filename) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$folderGotham}/#{$filename}.eot');
+    src: url('#{$folderGotham}/#{$filename}.eot?#iefix') format("embedded-opentype"),
+      url('#{$folderGotham}/#{$filename}.woff') format("woff"),
+      url('#{$folderGotham}/#{$filename}.ttf') format("truetype"),
+      url('#{$folderGotham}/#{$filename}.svg#08bb4ba465a902745fc23c83a5d9fdc2') format("svg");
+    font-weight: normal;
+  font-style: normal;
+  }
+}
+
+@mixin font-face-playfair($family, $filename) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$folderPlayfair}/#{$filename}.eot');
+    src: url('#{$folderPlayfair}/#{$filename}.eot?#iefix') format("embedded-opentype"),
+    	url('#{$folderPlayfair}/#{$filename}.woff') format("woff"),
+    	url('#{$folderPlayfair}/#{$filename}.ttf') format("truetype"),
+    	url('#{$folderPlayfair}/#{$filename}.svg#08bb4ba465a902745fc23c83a5d9fdc2') format("svg");
+    font-weight: normal;
+	font-style: normal;
+  }
+}
+
+// GRADIENT
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background: -webkit-linear-gradient($fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background:    -moz-linear-gradient($fromColor, $toColor); /* FF3.6 */
+  background:     -ms-linear-gradient($fromColor, $toColor); /* IE10 */
+  background:      -o-linear-gradient($fromColor, $toColor); /* Opera 11.10+ */
+  background:         linear-gradient($fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}', gradientType='0');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$fromColor}', endColorstr='#{$toColor}', gradientType='0')";
+}
+
+//TRANSITIONS
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}

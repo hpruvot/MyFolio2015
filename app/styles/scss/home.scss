@@ -1,0 +1,78 @@
+.home {
+	height: 100%;
+	width: 100%;
+	@include linear-gradient(rgb(195,55,58), rgb(165,38,41));
+	text-align: center;
+	color: #fff;
+	display: table;
+	overflow: hidden;
+	.inner-home {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&:before {
+		content: "";
+		opacity: 0.2;
+		background-image: url('#{$images}/pattern.png');
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.hgroup {
+		h1 {
+			font-family: "Playfair Bold";
+			font-size: 6em;
+			letter-spacing: 2.66px;
+			margin-bottom: 10px;
+		}
+		h2 {
+			display: inline-block;
+			font-family: "Gotham Light";
+			font-size: 2em;
+			text-transform: uppercase;
+			letter-spacing: 0.88px;
+		}
+		span {
+			display: inline-block;
+			font-family: "Playfair Regular";
+			font-size: 2em;
+			padding: 0 10px;
+		}
+		h3 {
+			display: inline-block;
+			font-family: "Gotham Light";
+			font-size: 2em;
+			text-transform: uppercase;
+			color: rgba(255,255,255,0.7);
+		}	
+	}
+	.about {
+		font-size: 1.6em;
+		padding: 9% 0;
+		h4 {
+			font-family: "Gotham Medium";
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 15px;
+		}
+		p {
+			font-family: "Gotham Light";
+			line-height: 20px;
+		}
+	}
+	.soon {
+		font-size: 1.6em;
+		h4 {
+			font-family: "Gotham Medium";
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 15px;
+		}
+		p {
+			font-family: "Gotham Light";
+			line-height: 20px;
+		}
+	}
+}
