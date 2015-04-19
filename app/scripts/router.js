@@ -13,7 +13,6 @@ define([
       routes: {
         "": "home",
         "home": "home",
-        "projects": "projects",
         "project/:name": "project",
         "*actions": "defaultRoute"
       },
@@ -21,7 +20,6 @@ define([
         this.route(/^project\/(\w+)/, 'project');
       },
       home: Controller.home,
-      projects: Controller.projects,
       project: Controller.project,
       defaultRoute: Controller.unknown
     });

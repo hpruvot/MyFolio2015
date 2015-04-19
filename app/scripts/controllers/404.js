@@ -1,4 +1,4 @@
-define(['hbs!views/404'], function (unknownTpl) {
+define(['hbs!templates/404'], function (unknownTpl) {
 
   var Unknown = function() {
     document.querySelector('.content').innerHTML = unknownTpl();

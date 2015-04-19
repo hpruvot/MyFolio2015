@@ -4,18 +4,21 @@
     "title": "Dyskit",
     "duration": "4 months",
     "position": "Developer",
-    "slug": "dyskit"
+    "slug": "dyskit",
+    "nextProject": "folioArthur"
    }, {
      "id": 2,
      "title": "FolioArthur",
      "duration": "6 months",
      "position": "Developer",
-     "slug": "folioArthur"
+     "slug": "folioArthur",
+     "nextProject": "assu2000"
    }, {
      "id": 3,
      "title": "Assu2000",
      "duration": "6 months",
      "position": "Developer",
-     "slug": "assu2000"
+     "slug": "assu2000",
+     "nextProject": "dyskit"
    }]
 }

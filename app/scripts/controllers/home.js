@@ -1,4 +1,4 @@
-define(['hbs!views/home'], function (homeTpl) {
+define(['hbs!templates/home'], function (homeTpl) {
 
   var Home = function() {
     document.querySelector('.content').innerHTML = homeTpl();

@@ -1,8 +1,9 @@
 define([
   'text!projects.json',
-  'hbs!views/project',
-  'hbs!views/404'
-], function (projects, projectTpl, unknownTpl) {
+  'models/Project',
+  'views/project',
+  'views/unknown'
+], function (projects, ProjectModel, ProjectView, UnknownView) {
 
   var Project = function(project) {
     /* We parse the projects only once, right after we loaded them */
@@ -16,13 +17,13 @@ define([
     });
 
     if (current && current[0]) {
-      document.querySelector('.content').innerHTML = projectTpl(current[0]);
-    } else {
-      /* Return a 404 if we didn't find a matching project */
-      document.querySelector('.content').innerHTML = unknownTpl();
-    }
+      var project = new ProjectModel(current[0]),
+          elementClass = ".project-" + current[0].slug;
 
-    console.log('Project page!', project);
+      new ProjectView({ model: project, className: elementClass });
+    } else {
+      new UnknownView();
+    }
   };
 
   return Project;

@@ -1,6 +1,6 @@
 define([
   'text!projects.json',
-  'hbs!views/projects'
+  'hbs!templates/projects'
 ], function (projects, projectsTpl) {
 
   var Projects = function() {

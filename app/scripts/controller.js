@@ -7,10 +7,10 @@ define([
 
   var Controller = {};
 
-  Controller.home       = Home;
-  Controller.project    = Project;
-  Controller.projects   = Projects;
-  Controller.unknown    = Unknown;
+  Controller.home     = Home;
+  Controller.project  = Project;
+  Controller.projects = Projects;
+  Controller.unknown  = Unknown;
 
   return Controller;
 });
