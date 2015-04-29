@@ -7,6 +7,7 @@ define(['backbone'], function (Backbone) {
       this.position = options.position || "";
       this.description = options.description || "";
       this.client = options.client || "";
+      this.image = options.image || "";
       this.nextProject = options.nextProject || "";
     }
   });

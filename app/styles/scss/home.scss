@@ -10,7 +10,7 @@
 		display: table-cell;
 		vertical-align: middle;
 	}
-	&:before {
+	/*&:before {
 		content: "";
 		opacity: 0.2;
 		background-image: url('#{$images}/pattern.png');
@@ -19,7 +19,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-	}
+	}*/
 	.hgroup {
 		h1 {
 			font-family: "Playfair Bold";
@@ -85,5 +85,67 @@
 	.inner-projects {
 		width: 100%;
 		height: 100%;
+	}
+	.project {
+		height: 350px;
+		background-size: cover;
+  		background-position: center center;
+  		background-repeat: no-repeat;
+  		margin: 20px 0;
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			text-decoration: none;
+			position: relative;
+			span {
+				position: absolute;
+				font-family: "Playfair Regular";
+				font-style: italic;
+				font-size: 30em;
+				color: #CECECE;
+				left: 0;
+				right: 0;
+				margin: auto;
+				text-align: center;
+			}
+		}
+	}
+	.project-info {
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		padding: 175px 0 109px 0;
+		h4 {
+			font-family: "Gotham Medium";
+			font-size: 4em;
+			color: #3D3B3A;
+			letter-spacing: 5px;
+			line-height: 48px;
+			text-transform: uppercase;
+		}
+		h5 {
+			font-family: "Gotham Light";
+			font-size: 1.5em;
+			color: #A73737;
+			letter-spacing: 1px;
+			line-height: 18px;
+			text-transform: uppercase;
+		}
+		p.technos {
+			position: absolute;
+			text-align: center;
+			left: 0;
+			right: 0;
+			bottom: 10px;
+			font-family: "Gotham Light";
+			font-size: 1.3em;
+			color: #6E6E6E;
+			line-height: 16px;
+		}
+		strong {
+
+		}
 	}
 }

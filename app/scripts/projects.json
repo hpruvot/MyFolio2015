@@ -5,6 +5,7 @@
     "duration": "4 months",
     "position": "Developer",
     "slug": "dyskit",
+    "image":"img/cover_dyskit.jpg",
     "nextProject": "folioArthur"
    }, {
      "id": 2,
@@ -12,6 +13,7 @@
      "duration": "6 months",
      "position": "Developer",
      "slug": "folioArthur",
+     "image":"img/cover_portfolio.jpg",
      "nextProject": "assu2000"
    }, {
      "id": 3,
@@ -19,6 +21,7 @@
      "duration": "6 months",
      "position": "Developer",
      "slug": "assu2000",
+     "image":"img/cover_assu2000.jpg",
      "nextProject": "dyskit"
    }]
 }
