@@ -1,6 +1,6 @@
 require.config({
   paths: {
-    jquery: 'lib/jquery',
+    jquery: '../bower_components/jquery/dist/jquery.min',
     underscore: 'lib/underscore',
     backbone: '../bower_components/exoskeleton/exoskeleton',
     'backbone.nativeview': '../bower_components/backbone.nativeview/backbone.nativeview',
