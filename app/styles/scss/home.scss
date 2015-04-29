@@ -92,6 +92,7 @@
   		background-position: center center;
   		background-repeat: no-repeat;
   		margin: 20px 0;
+  		position: relative;
 		a {
 			display: block;
 			width: 100%;
@@ -113,10 +114,12 @@
 		}
 	}
 	.project-info {
-		margin: 0 auto;
-		position: relative;
+		margin: auto;
+		position: absolute;
 		text-align: center;
 		padding: 175px 0 109px 0;
+		top: 0;
+		width: 100%;
 		h4 {
 			font-family: "Gotham Medium";
 			font-size: 4em;
